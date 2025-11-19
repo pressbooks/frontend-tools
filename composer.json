@@ -1,0 +1,34 @@
+{
+  "name": "pressbooks/frontend-tools",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Pressbooks (Book Oven Inc.)",
+      "email": "code@pressbooks.com"
+    },
+    {
+      "name": "Oscar Arzola",
+      "email": "os@pressbooks.com"
+    }
+  ],
+  "require": {
+    "kucrut/vite-for-wp": "^0.12.0"
+  },
+  "require-dev": {
+    "laravel/pint": "^1.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "PressbooksFrontendTools\\": "src/"
+    }
+  },
+  "scripts": {
+    "standards": [
+      "vendor/bin/pint --test"
+    ],
+    "fix": [
+      "vendor/bin/pint"
+    ]
+  }
+}
